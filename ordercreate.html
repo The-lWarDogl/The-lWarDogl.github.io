@@ -1,0 +1,1315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="csrf-param" content="_csrf">
+    <meta name="csrf-token"
+        content="j3Ap36jTcfXNbZA2q_Y4kn1i_Djasg6eEq16J9oUdqvaSBu2mrYAk7ke5w_NwXbFMBeaXY3_fK9N-C1QmVwH_w==">
+    <title>Добавление заявки</title>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' name='viewport'>
+    <link rel="shortcut icon" href="https://lk.glogist.ru/favicon.png">
+    <link
+        href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic&amp;subset=cyrillic,cyrillic-ext"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;0,800;1,600;1,800&amp;display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&amp;display=swap"
+        rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(m, e, t, r, i, k, a) {
+            m[i] = m[i] || function() {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })
+        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+        ym(38546780, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true
+        });
+    </script>
+    <noscript>
+        <div><img src="https://mc.yandex.ru/watch/38546780" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <!-- /Yandex.Metrika counter -->
+
+
+    <link href="https://lk.glogist.ru/static/assets/b9186a3a/css/bootstrap.css" rel="stylesheet">
+    <link href="https://lk.glogist.ru/static/assets/b0617a94/css/dependent-dropdown.min.css" rel="stylesheet">
+    <link href="https://lk.glogist.ru/static/assets/bceaf30/css/kv-widgets.min.css" rel="stylesheet">
+    <link href="https://lk.glogist.ru/static/assets/9ee362e2/css/bootstrap-datepicker3.min.css" rel="stylesheet">
+    <link href="https://lk.glogist.ru/static/assets/9ee362e2/css/datepicker-kv.min.css" rel="stylesheet">
+    <link href="https://lk.glogist.ru/static/assets/8c2c335d/css/select2.min.css" rel="stylesheet">
+    <link href="https://lk.glogist.ru/static/assets/c7704526/css/select2-addl.min.css" rel="stylesheet">
+    <link href="https://lk.glogist.ru/static/assets/c7704526/css/select2-default.min.css" rel="stylesheet">
+    <link href="https://lk.glogist.ru/static/assets/1043f6f1/pnotify.css" rel="stylesheet">
+    <link href="https://lk.glogist.ru/static/assets/b31c9d9d/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://lk.glogist.ru/static/assets/4fbf1380/dist/css/AdminLTE.min.css" rel="stylesheet">
+    <link href="https://lk.glogist.ru/static/assets/4fbf1380/dist/css/skins/skin-blue.min.css" rel="stylesheet">
+    <link href="https://lk.glogist.ru/static/assets/3417d24f/css/theme.css" rel="stylesheet">
+    <link href="https://lk.glogist.ru/static/assets/94b23c3e/glogist.css" rel="stylesheet">
+    <link href="https://lk.glogist.ru/static/assets/94b23c3e/bootstrap-tour.min.css" rel="stylesheet">
+    <script src="https://lk.glogist.ru/static/assets/ddcb7683/jquery.js"></script>
+    <script src="https://lk.glogist.ru/static/assets/95bdb41c/yii.js"></script>
+    <script src="https://lk.glogist.ru/static/assets/1043f6f1/pnotify.js"></script>
+    <script src="https://lk.glogist.ru/static/assets/b9186a3a/js/bootstrap.js"></script>
+    <script src="https://lk.glogist.ru/static/assets/4fbf1380/dist/js/adminlte.min.js"></script>
+    <script
+        src="https://lk.glogist.ru/static/assets/4fbf1380/bower_components/jquery-slimscroll/jquery.slimscroll.min.js">
+    </script>
+    <script>
+        window.depdrop_a0a35871 = {"initialize":false,"depends":["contractor_id"],"loadingText":"Загрузка...","placeholder":"--- выбрать ---","url":"\/client\/contract\/list"};
+
+window.kvDatepicker_40e446a8 = {"format":"mm.yyyy","startView":"months","minViewMode":"months","language":"ru"};
+
+window.s2options_7ebc6538 = {"themeCss":".select2-container--default","sizeCss":"","doReset":true,"doToggle":false,"doOrder":false};
+window.select2_6a144669 = {"allowClear":false,"minimumInputLength":2,"language":"ru","ajax":{"url":["\/client\/station\/find"],"dataType":"json","data":function(params) { return {q:params.term}; }},"escapeMarkup":function (markup) { return markup; },"templateResult":function(station) { return station.result; },"templateSelection":function (station) {return station.text;},"theme":"default","width":"100%","placeholder":"--- выбрать ---"};
+
+window.select2_db9cbcf5 = {"allowClear":false,"minimumInputLength":2,"language":"ru","ajax":{"url":["\/client\/station\/find"],"dataType":"json","data":function(params) { return {q:params.term}; }},"escapeMarkup":function (markup) { return markup; },"templateResult":function(station) { return station.result; },"templateSelection":function (station) { return station.text; },"theme":"default","width":"100%","placeholder":"--- выбрать ---"};
+
+window.select2_fb4bfd56 = {"allowClear":false,"theme":"default","width":"100%","placeholder":"--- выбрать ---","language":"ru"};
+
+window.select2_489630a1 = {"allowClear":true,"minimumInputLength":0,"language":"ru","ajax":{"url":["\/client\/goods\/find"],"dataType":"json","data":function (params) { return {q:params.term, type:0, goodsTmp:$("#goods-tmp").val(), goodsTmpType:$("#goods-tmp-type").val()}; }},"escapeMarkup":function (markup) { return markup; },"templateResult":function (station) { return station.text; },"templateSelection":function (station) { 
+                             $("#goods-tmp").val(station.code);
+                             $("#goods-tmp-type").val(0);
+                             return station.text;                       
+                     },"theme":"default","width":"100%","placeholder":"--- выбрать ---"};
+
+window.select2_4e3e3c17 = {"allowClear":true,"minimumInputLength":0,"language":"ru","ajax":{"url":["\/client\/goods\/find"],"dataType":"json","data":function (params) { return {q:params.term, type:1, goodsTmp:$("#goods-tmp").val()}; }},"escapeMarkup":function (markup) { return markup; },"templateResult":function (station) { return station.text; },"templateSelection":function (station) { 
+                            $("#goods-tmp").val(station.code);
+                            $("#goods-tmp-type").val(1);
+                            return station.text; 
+                        },"theme":"default","width":"100%","placeholder":"--- выбрать ---"};
+    </script>
+</head>
+
+<body class="sidebar-mini skin-blue  fixed">
+
+    <div class="wrapper">
+        <div class="content-wrapper" style="padding-top: 0 !important; margin-left: 0 !important;">
+            <section class="content">
+
+
+                <div class="order">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <form id="order-form" action="/client/order/create" method="post">
+                                <input type="hidden" name="_csrf" value="j3Ap36jTcfXNbZA2q_Y4kn1i_Djasg6eEq16J9oUdqvaSBu2mrYAk7ke5w_NwXbFMBeaXY3_fK9N-C1QmVwH_w==">
+                                <div class="box box-default">
+                                    <div class="box-body">
+
+                                        <div class="row">
+                                            <div class="col-lg-4">
+                                                <div class="form-group field-contractor_id required">
+                                                    <label class="control-label" for="contractor_id">Контрагент</label>
+                                                    <select id="contractor_id" class="form-control" name="Order[contractor_id]" aria-required="true">
+<option value="">--- выбрать ---</option>
+<option value="309">Тест</option>
+</select>
+
+                                                    <div class="help-block"></div>
+                                                </div>
+                                                <div class="form-group field-order-contract_id required">
+                                                    <label class="control-label" for="order-contract_id">Договор</label>
+                                                    <select id="order-contract_id" class="form-control" name="Order[contract_id]" aria-required="true" data-krajee-depdrop="depdrop_a0a35871">
+
+</select>
+
+                                                    <div class="help-block"></div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="col-lg-4">
+                                                <div class="form-group field-order-delivery_start required">
+                                                    <label class="control-label" for="order-delivery_start">Период поставки с</label>
+                                                    <input type="text" id="order-delivery_start" class="form-control krajee-datepicker" name="Order[delivery_start]" readonly="1" autocomplete="off" aria-required="true" data-datepicker-source="order-delivery_start" data-datepicker-type="1" data-krajee-kvDatepicker="kvDatepicker_40e446a8">
+
+                                                    <div class="help-block"></div>
+                                                </div>
+                                                <div class="form-group field-order-delivery_end">
+                                                    <label class="control-label" for="order-delivery_end">Период поставки до</label>
+                                                    <input type="text" id="order-delivery_end" class="form-control krajee-datepicker" name="Order[delivery_end]" readonly="1" autocomplete="off" data-datepicker-source="order-delivery_end" data-datepicker-type="1" data-krajee-kvDatepicker="kvDatepicker_40e446a8">
+
+                                                    <div class="help-block"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4">
+                                                <div class="form-group field-order-departure_station required">
+                                                    <label class="control-label" for="order-departure_station">Станция отправления</label>
+                                                    <div class="kv-plugin-loading loading-order-departure_station">
+                                                        &nbsp;</div><select id="order-departure_station" class="form-control" name="Order[departure_station]" aria-required="true" data-s2-options="s2options_7ebc6538" data-krajee-select2="select2_6a144669" style="width: 100%; height: 1px; visibility: hidden;">
+<option value="">--- выбрать ---</option>
+</select>
+
+                                                    <div class="help-block"></div>
+                                                </div>
+                                                <div class="form-group field-order-destination_station required">
+                                                    <label class="control-label" for="order-destination_station">Станция назначения</label>
+                                                    <div class="kv-plugin-loading loading-order-destination_station">
+                                                        &nbsp;</div><select id="order-destination_station" class="form-control" name="Order[destination_station]" aria-required="true" data-s2-options="s2options_7ebc6538" data-krajee-select2="select2_db9cbcf5" style="width: 100%; height: 1px; visibility: hidden;">
+<option value="">--- выбрать ---</option>
+</select>
+
+                                                    <div class="help-block"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div id="country-list" class="col-lg-3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box box-default">
+                                    <div class="box-body">
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <div class="form-group field-order-wagon_quantity required">
+                                                    <label class="control-label" for="order-wagon_quantity">Желаемое количество вагонов</label>
+                                                    <input type="number" id="order-wagon_quantity" class="form-control" name="Order[wagon_quantity]" min="0" aria-required="true">
+
+                                                    <div class="help-block"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div id="wagon_number-wrapper">
+                                                    <label class="control-label">Номера вагонов (через запятую)</label>
+                                                    <input type="text" class="form-control form-group wagon_number-item" name="Order[wagon_number]" value="" id="wagon_number">
+                                                    <div class="help-block"><span id="wagon-help"></span></div>
+                                                    <div class="help-block">Добавлено номеров:
+                                                        <span id="wagon-cnt">0</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div class="form-group field-order-oon_number">
+                                                    <label class="control-label" for="order-oon_number">Номер ООН</label>
+                                                    <input type="text" id="order-oon_number" class="form-control" name="Order[oon_number]" maxLength="4">
+
+                                                    <div class="help-block"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-lg-2">
+                                                <div class="form-group field-order-wagon_type required">
+                                                    <label class="control-label" for="order-wagon_type">Тип вагона</label>
+                                                    <div class="kv-plugin-loading loading-order-wagon_type">&nbsp;</div>
+                                                    <select id="order-wagon_type" class="form-control" name="Order[wagon_type]" aria-required="true" data-s2-options="s2options_7ebc6538" data-krajee-select2="select2_fb4bfd56" style="width: 100%; height: 1px; visibility: hidden;">
+<option value="">--- выбрать ---</option>
+<optgroup label="В универсальных вагонах">
+<option value="54">Крытый</option>
+<option value="55">Платформа</option>
+<option value="56">Полувагон</option>
+</optgroup>
+<optgroup label="В специализированных вагонах">
+<option value="16">1-ярусный вагон для микроавтобусов, легковых автомобилей</option>
+<option value="17">Автомобилевоз с длиной автосцепок более 30 м (крытый вагон для легковых автомобилей)</option>
+<option value="18">Автомобилевоз с длиной автосцепок до 30 м вкл (крытый вагон для легковых автомобилей)</option>
+<option value="19">битумовоз (бункерный полувагон для нефтебитума)</option>
+<option value="20">вагон-хоппер для минеральных удобрений</option>
+<option value="21">вагон-хоппер для сырья минеральных удобрений</option>
+<option value="22">двухъярусная платформа для автомобилей</option>
+<option value="23">другие вагоны длиной &gt; 25 м</option>
+<option value="24">другие типы вагонов с длиной автосцепок более 19,6 м</option>
+<option value="25">думпкар</option>
+<option value="26">зерновоз</option>
+<option value="27">лесовоз (19,6 м и более)</option>
+<option value="28">модернизированная платформа для лесных грузов</option>
+<option value="29">муковоз</option>
+<option value="30">окатышевоз</option>
+<option value="31">платформа для длинномерных грузов</option>
+<option value="32">платформа для колесных пар</option>
+<option value="33">платформа для крупнотоннажных контейнеров и колесной техники (19,6 м и более)</option>
+<option value="34">платформа для крупнотоннажных контейнеров и колесной техники (до 19,6 м)</option>
+<option value="35">платформа для лесоматериалов круглых (менее 19,6 м)</option>
+<option value="36">платформа для рулонной стали (рулоновоз)</option>
+<option value="37">платформа для цельнокатаных колес</option>
+<option value="38">платформа с доп. оборудованием для перевозки рельсов</option>
+<option value="39">полувагон для технологической щепы</option>
+<option value="40">полувагон со съемной крышей</option>
+<option value="41">скотовоз</option>
+<option value="42">содовоз</option>
+<option value="43">специализированный вагон (кроме поименованных отдельно)</option>
+<option value="44">удлиненная фитинговая платформа (25,52 м и более)</option>
+<option value="45">удлиненная фитинговая платформа (с 19,6 до 25 м)</option>
+<option value="46">фитинговая платформа (до 19,6 м)</option>
+<option value="47">хлыстовоз</option>
+<option value="48">хоппер-дозатор</option>
+<option value="49">хоппер-цементовоз</option>
+<option value="50">цельнометаллический для автомобилей (ЦМГВ)</option>
+<option value="51">цельнометаллический для легковесных грузов (ЦМГВ)</option>
+<option value="52">цистерна-цементовоз</option>
+</optgroup>
+<optgroup label="В изотермическом подвижном составе">
+<option value="5">6-ти осный изотермический без дизель-генератора</option>
+<option value="6">автономный рефрижераторный вагон (АРВ)</option>
+<option value="7">автономный рефрижераторный вагон типа АРВ-Э (курсирует в сопровождении бригады обслуживания)</option>
+<option value="8">вагон живорыбной секции</option>
+<option value="9">вагон рефрижераторного поезда или секции</option>
+<option value="10">вагон-ледник</option>
+<option value="11">вагон-термос</option>
+<option value="12">ИВ-термос (переоборудованный из вагона рефсекции)</option>
+<option value="13">ИВ-термос (переоборудованный из крытого вагона)</option>
+<option value="14">прочие изотермические</option>
+</optgroup>
+<optgroup label="В цистернах">
+<option value="58">Цистерна (кроме поименованных отдельно)</option>
+<option value="59">Цистерна для виноматериалов</option>
+<option value="60">Цистерна для кислот</option>
+<option value="61">Цистерна для метанола</option>
+<option value="62">Цистерна для молока</option>
+<option value="63">Цистерна для нефтепродуктов</option>
+<option value="64">Цистерна для нефти</option>
+<option value="65">Цистерна для остальных скоропортящихся грузов</option>
+<option value="66">Цистерна для остальных химических грузов</option>
+<option value="67">Цистерна для плодоовощных соков</option>
+<option value="68">Цистерна для сжиженных газов, углеводородов</option>
+<option value="69">Цистерна для спиртов и фенолов</option>
+</optgroup>
+<optgroup label="На сцепах платформ и транспортеров( а также негаборитные грузы)">
+<option value="116">12-осные транспортеры в составе грузовых поездов</option>
+<option value="117">14-осные транспортеры в составе грузовых поездов</option>
+<option value="118">16-осные с отдельным локомотивом железных дорог</option>
+<option value="119">16-осные транспортеры в составе грузовых поездов</option>
+<option value="120">16-осные транспортеры с одной промежуточной платформой в составе грузовых поездов</option>
+<option value="121">20-осные сочлененные с отдельным локомотивом железных дорог</option>
+<option value="122">20-осные транспортеры в составе грузовых поездов</option>
+<option value="123">24- и 32-осные сцепные с отдельным локомотивом железных дорог</option>
+<option value="124">28-осные сочлененные с отдельным локомотивом железных дорог</option>
+<option value="125">32-осные сочлененные с отдельным локомотивом железных дорог</option>
+<option value="126">4-осные транспортеры в составе грузовых поездов</option>
+<option value="127">6-осные транспортеры в составе грузовых поездов</option>
+<option value="128">8-осные транспортеры в составе грузовых поездов</option>
+<option value="129">8-осные транспортеры с двумя промежуточными платформами в составе грузовых поездов</option>
+<option value="130">8-осные транспортеры с одной промежуточной платформой в составе грузовых поездов</option>
+<option value="131">платформа</option>
+<option value="132">платформа для крупнотоннажных контейнеров и колесной техники (19,6 м и более)</option>
+<option value="133">платформа для крупнотоннажных контейнеров и колесной техники (до 19,6 м)</option>
+<option value="134">полувагон</option>
+<option value="135">специализированный вагон (кроме поименованных отдельно)</option>
+<option value="136">удлиненная фитинговая платформа (25,52 м и более)</option>
+<option value="137">удлиненная фитинговая платформа (с 19,6 до 25 м)</option>
+<option value="138">фитинговая платформа (до 19,6 м)</option>
+</optgroup>
+<optgroup label="Сборная">
+<option value="140">6-ти осный изотермический без дизель-генератора</option>
+<option value="141">автомобилевоз с длиной автосцепок более 30 м (крытый вагон для легковых автомобилей)</option>
+<option value="142">автомобилевоз с длиной автосцепок до 30 м вкл (крытый вагон для легковых автомобилей)</option>
+<option value="143">автономный рефрижераторный вагон (АРВ)</option>
+<option value="144">автономный рефрижераторный вагон типа АРВ-Э (курсирует в сопровождении бригады обслуживания)</option>
+<option value="145">багажный</option>
+<option value="146">вагон рефрижераторного поезда или секции</option>
+<option value="147">вагон-ледник</option>
+<option value="148">вагон-термос</option>
+<option value="149">другие вагоны длиной &gt; 25 м</option>
+<option value="150">другие типы вагонов с длиной автосцепок более 19,6 м</option>
+<option value="151">ИВ-термос (переоборудованный из вагона рефсекции)</option>
+<option value="152">ИВ-термос (переоборудованный из крытого вагона)</option>
+<option value="153">крытый</option>
+<option value="154">лесовоз (19,6 м и более)</option>
+<option value="155">пассажирский</option>
+<option value="156">платформа</option>
+<option value="157">платформа для длинномерных грузов</option>
+<option value="158">платформа для крупнотоннажных контейнеров и колесной техники (19,6 м и более)</option>
+<option value="159">платформа для крупнотоннажных контейнеров и колесной техники (до 19,6 м)</option>
+<option value="160">полувагон</option>
+<option value="161">полувагон для технологической щепы</option>
+<option value="162">полувагон со съемной крышей</option>
+<option value="163">прочие изотермические</option>
+<option value="164">скотовоз</option>
+<option value="165">специализированный вагон (кроме поименованных отдельно)</option>
+<option value="166">удлиненная фитинговая платформа (25,52 м и более)</option>
+<option value="167">удлиненная фитинговая платформа (с 19,6 до 25 м)</option>
+<option value="168">фитинговая платформа (до 19,6 м)</option>
+<option value="169">цельнометаллический для автомобилей (ЦМГВ)</option>
+<option value="170">цельнометаллический для легковесных грузов (ЦМГВ)</option>
+</optgroup>
+<optgroup label="В багажных и пасажирских вагонах в  составе грузовых поездов">
+<option value="2">багажный</option>
+<option value="3">пассажирский</option>
+</optgroup>
+<optgroup label="Контейнерная">
+<option value="103">контейнер 0.625</option>
+<option value="104">контейнер 1.25</option>
+<option value="105">контейнер 10 (10-футовый)</option>
+<option value="106">контейнер 20 (20-футовый)</option>
+<option value="107">контейнер 24 (20-футовый)</option>
+<option value="108">контейнер 25,30 (30-футовый)</option>
+<option value="109">контейнер 3, 3(5) (загрузка до 2400 кг)</option>
+<option value="110">контейнер 3(5) (загрузка свыше 2400 кг)</option>
+<option value="111">контейнер 30 (20-футовый)</option>
+<option value="112">контейнер 30 (40-футовый)</option>
+<option value="113">контейнер 5</option>
+<option value="114">контейнер длиной свыше 40-футов</option>
+</optgroup>
+<optgroup label="танк-контейнер">
+<option value="88">контейнер 10 (10-футовый)</option>
+<option value="89">контейнер 20 (20-футовый)</option>
+<option value="90">контейнер 24 (20-футовый)</option>
+<option value="91">контейнер 25,30 (30-футовый)</option>
+<option value="92">контейнер 30 (20-футовый)</option>
+<option value="93">контейнер 30 (40-футовый)</option>
+<option value="94">контейнер длиной свыше 40-футов</option>
+</optgroup>
+<optgroup label="рефрижераторный контейнер">
+<option value="72">контейнер 10 (10-футовый)</option>
+<option value="73">контейнер 20 (20-футовый)</option>
+<option value="74">контейнер 24 (20-футовый)</option>
+<option value="75">контейнер 25,30 (30-футовый)</option>
+<option value="76">контейнер 30 (20-футовый)</option>
+<option value="77">контейнер 30 (40-футовый)</option>
+<option value="78">контейнер длиной свыше 40-футов</option>
+</optgroup>
+<optgroup label="термоизолированный контейнер">
+<option value="96">контейнер 10 (10-футовый)</option>
+<option value="97">контейнер 20 (20-футовый)</option>
+<option value="98">контейнер 24 (20-футовый)</option>
+<option value="99">контейнер 25,30 (30-футовый)</option>
+<option value="100">контейнер 30 (20-футовый)</option>
+<option value="101">контейнер 30 (40-футовый)</option>
+<option value="102">контейнер длиной свыше 40-футов</option>
+</optgroup>
+<optgroup label="специализированный контейнер">
+<option value="80">контейнер 10 (10-футовый)</option>
+<option value="81">контейнер 20 (20-футовый)</option>
+<option value="82">контейнер 24 (20-футовый)</option>
+<option value="83">контейнер 25,30 (30-футовый)</option>
+<option value="84">контейнер 30 (20-футовый)</option>
+<option value="85">контейнер 30 (40-футовый)</option>
+<option value="86">контейнер длиной свыше 40-футов</option>
+</optgroup>
+</select>
+
+                                                    <div class="help-block"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <div class="form-group field-order-wagon_load required">
+                                                    <label class="control-label" for="order-wagon_load">Загруженность</label>
+                                                    <select id="order-wagon_load" class="form-control" name="Order[wagon_load]" aria-required="true">
+<option value="0">Порожний</option>
+<option value="1" selected>Груженый</option>
+</select>
+
+                                                    <div class="help-block"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <div class="form-group field-order-affiliation required">
+                                                    <label class="control-label" for="order-affiliation">Принадлежность ПС</label>
+                                                    <select id="order-affiliation" class="form-control" name="Order[affiliation]" aria-required="true">
+<option value="1">Собственный</option>
+<option value="2">Инвентарный</option>
+</select>
+
+                                                    <div class="help-block"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2">
+                                                <div class="form-group field-order-danger_type">
+                                                    <label class="control-label" for="order-danger_type">Тип опасности</label>
+                                                    <select id="order-danger_type" class="form-control" name="Order[danger_type]">
+<option value=""></option>
+<option value="0">Неопасный груз</option>
+<option value="1">Опасный груз</option>
+<option value="2">На условиях опасного груза</option>
+<option value="3">Тара на условиях опасного груза</option>
+</select>
+
+                                                    <div class="help-block"></div>
+                                                </div>
+                                                <div class="form-group field-order-wagon_registration">
+                                                    <label class="control-label" for="order-wagon_registration">Приписка вагона</label>
+                                                    <select id="order-wagon_registration" class="form-control" name="Order[wagon_registration]">
+<option value="">--- выбрать ---</option>
+<option value="20">РЖД</option>
+<option value="21">БЧ</option>
+<option value="57">АЗ</option>
+<option value="58">АРМ</option>
+<option value="28">ГР</option>
+<option value="27">КЗХ</option>
+<option value="33">КЖД</option>
+<option value="59">КРГ</option>
+<option value="25">ЛДЗ</option>
+<option value="24">ЛГ</option>
+<option value="23">ЧФМ</option>
+<option value="31">УБЖД</option>
+<option value="56">ЖСР</option>
+<option value="66">ТДЖ</option>
+<option value="67">ТРК</option>
+<option value="29">УТИ</option>
+<option value="22">УЗ</option>
+<option value="26">ЭВР</option>
+</select>
+
+                                                    <div class="help-block"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-3">
+                                                <div id="size_comment">
+                                                    <div class="form-group field-order-cargo_dimension required">
+                                                        <label class="control-label" for="order-cargo_dimension">Габаритность груза</label>
+                                                        <select id="order-cargo_dimension" class="form-control" name="Order[cargo_dimension]" aria-required="true">
+<option value=""></option>
+<option value="1">Габаритный груз</option>
+<option value="2">Негабаритный груз</option>
+<option value="0">Неизвестно</option>
+</select>
+
+                                                        <div class="help-block"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div id="size_comment">
+                                                    <div class="form-group field-order-size_comment">
+                                                        <label class="control-label" for="order-size_comment">Степень габаритности</label>
+                                                        <input type="text" id="order-size_comment" class="form-control" name="Order[size_comment]">
+
+                                                        <div class="help-block"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3">
+                                                <div id="platform_type" class="hidden">
+                                                    <div class="form-group field-order-platform_type">
+                                                        <label class="control-label" for="order-platform_type">Тип платформы</label>
+                                                        <select id="order-platform_type" class="form-control" name="Order[platform_type]">
+<option value="">--- выбрать ---</option>
+<option value="131">платформа</option>
+<option value="132">платформа для крупнотоннажных контейнеров и колесной техники (19,6 м и более)</option>
+<option value="133">платформа для крупнотоннажных контейнеров и колесной техники (до 19,6 м)</option>
+<option value="134">полувагон</option>
+<option value="136">удлиненная фитинговая платформа (25,52 м и более)</option>
+<option value="137">удлиненная фитинговая платформа (с 19,6 до 25 м)</option>
+<option value="138">фитинговая платформа (до 19,6 м)</option>
+</select>
+
+                                                        <div class="help-block"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="row">
+                                            <div class="col-lg-12">
+                                                <div id="empty-load" class="alert alert-warning" style="display: none;">
+                                                    При заполнении заявки на
+                                                    порожний вагон необходимо указывать из-под какого груза идёт вагон!
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div id="cargo-wrapper">
+                                            <hr>
+                                            <div class="row" id="cargo-block-1">
+                                                <div class="col-lg-3">
+                                                    <div
+                                                        class="form-group highlight-addon required field-cargo-etcng-1">
+                                                        <label for="cargo-etcng-1" class="control-label has-star">Наименование или код груза
+                    ЕТСНГ</label>
+                                                        <div class="kv-plugin-loading loading-cargo-etcng-1">&nbsp;
+                                                        </div><select id="cargo-etcng-1" class="cargo-input form-control" name="Cargo[1][etcng_id]" data-s2-options="s2options_7ebc6538" data-krajee-select2="select2_489630a1" style="width: 100%; height: 1px; visibility: hidden;">
+<option value="">--- выбрать ---</option>
+</select>
+                                                        <div class="help-block"></div>
+                                                    </div>
+
+                                                    <input type="hidden" id="goods-tmp" name="goods-tmp"> <input type="hidden" id="goods-tmp-type" name="goods-tmp-type">
+                                                </div>
+                                                <div class="col-lg-3">
+                                                    <div class="form-group highlight-addon required field-cargo-gng-1">
+                                                        <label for="cargo-gng-1" class="control-label has-star">Наименование или код груза
+                    ГНГ</label>
+                                                        <div class="kv-plugin-loading loading-cargo-gng-1">&nbsp;</div>
+                                                        <select id="cargo-gng-1" class="cargo-input form-control" name="Cargo[1][gng_id]" data-s2-options="s2options_7ebc6538" data-krajee-select2="select2_4e3e3c17" style="width: 100%; height: 1px; visibility: hidden;">
+<option value="">--- выбрать ---</option>
+</select>
+                                                        <div class="help-block"></div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-lg-3">
+                                                    <div
+                                                        class="cargo-weight form-group highlight-addon required  field-cargo-weight-1">
+                                                        <label for="cargo-weight-1" class="control-label has-star">Вес груза на единицу
+                    ПС (тонны)</label>
+                                                        <input type="number" id="cargo-weight-1" class="form-control cargo-input weight-input" name="Cargo[1][cargo_weight]" max="32000" min="0" data-dependent="cargo-wagon_load" data-value="1">
+                                                        <div class="help-block"></div>
+                                                    </div>
+                                                    <div class="cargo-gu form-group hidden">
+                                                        <label for="cargo_number">Номер ГУ</label>
+                                                        <input type="text" class="form-control" name="Cargo[1][gu_number]" maxLength="20">
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-12 text-right">
+                                                <button id="add-cargo-field" class="btn btn-default btn-sm">
+                        <span class="fa fa-plus"></span> Добавить
+                    </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-solid box box-primary">
+                                    <div class="box-header">
+                                        <h3 class="btn btn-box-tool box-title" data-widget="collapse">
+                                            Грузоотправитель/Грузополучатель</h3>
+                                        <div class="box-tools">
+                                            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="box-body">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <p class="lead">Грузоотправитель</p>
+                                                <div class="row">
+                                                    <div class="col-sm-4 required">
+                                                        <label class="control-label" for="sender_country">Страна</label>
+                                                        <select id="sender_country" class="form-control" name="sender_country">
+<option value="0">Российская Федерация</option>
+<option value="1"> Республика Казахстан</option>
+<option value="2"> Республика Узбекистан</option>
+<option value="3"> Республика Таджикистан</option>
+<option value="4"> Кыргызская Республика</option>
+<option value="5"> Азербайджанская Республика</option>
+<option value="6"> Республика Грузия</option>
+<option value="7"> Туркменистан</option>
+<option value="8"> Республика Беларусь</option>
+<option value="9"> Литовская Республика</option>
+<option value="10">Латвийская Республика</option>
+<option value="11"> Монголия</option>
+</select>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group field-order-sender_okpo">
+                                                            <label class="control-label" for="order-sender_okpo">ОКПО</label>
+                                                            <input type="text" id="order-sender_okpo" class="form-control" name="Order[sender_okpo]" maxLength="10">
+                                                            <div class="hint-block">ОКПО можно <a
+                                                                    href="https://websbor.rosstat.gov.ru/online/info"
+                                                                    target="_blank">узнать по ИНН</a> на сайте Росстата
+                                                            </div>
+                                                            <div class="help-block"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group field-order-sender_name required">
+                                                    <label class="control-label" for="order-sender_name">Наименование</label>
+                                                    <input type="text" id="order-sender_name" class="form-control" name="Order[sender_name]" placeholder="Необходимо заполнить &quot;Наименование компании, организационную форму&quot;, пример Глобал Логистик ООО" aria-required="true">
+
+                                                    <div class="help-block"></div>
+                                                </div>
+                                                <div class="form-group field-order-sender_address">
+                                                    <label class="control-label" for="order-sender_address">Адрес</label>
+                                                    <input type="text" id="order-sender_address" class="form-control" name="Order[sender_address]" placeholder="индекс, страна, город, улица, дом">
+
+                                                    <div class="help-block"></div>
+                                                </div>
+                                                <div class="form-group field-order-sender_tgnl">
+                                                    <label class="control-label" for="order-sender_tgnl">ТГНЛ</label>
+                                                    <input type="text" id="order-sender_tgnl" class="form-control" name="Order[sender_tgnl]" maxLength="4">
+
+                                                    <div class="help-block"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6">
+                                                <p class="lead">Грузополучатель</p>
+                                                <div class="row">
+                                                    <div class="col-sm-4 required">
+                                                        <label class="control-label" for="receiver_country">Страна</label>
+                                                        <select id="receiver_country" class="form-control" name="receiver_country">
+<option value="0">Российская Федерация</option>
+<option value="1"> Республика Казахстан</option>
+<option value="2"> Республика Узбекистан</option>
+<option value="3"> Республика Таджикистан</option>
+<option value="4"> Кыргызская Республика</option>
+<option value="5"> Азербайджанская Республика</option>
+<option value="6"> Республика Грузия</option>
+<option value="7"> Туркменистан</option>
+<option value="8"> Республика Беларусь</option>
+<option value="9"> Литовская Республика</option>
+<option value="10">Латвийская Республика</option>
+<option value="11"> Монголия</option>
+</select>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <div class="form-group field-order-receiver_okpo">
+                                                            <label class="control-label" for="order-receiver_okpo">ОКПО</label>
+                                                            <input type="text" id="order-receiver_okpo" class="form-control" name="Order[receiver_okpo]" maxLength="10">
+                                                            <div class="hint-block">ОКПО можно <a
+                                                                    href="https://websbor.rosstat.gov.ru/online/info"
+                                                                    target="_blank">узнать по ИНН</a> на сайте Росстата
+                                                            </div>
+                                                            <div class="help-block"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group field-order-receiver_name required">
+                                                    <label class="control-label" for="order-receiver_name">Наименование</label>
+                                                    <input type="text" id="order-receiver_name" class="form-control" name="Order[receiver_name]" placeholder="Необходимо заполнить &quot;Наименование компании, организационную форму&quot;, пример Глобал Логистик ООО" aria-required="true">
+
+                                                    <div class="help-block"></div>
+                                                </div>
+                                                <div class="form-group field-order-receiver_address">
+                                                    <label class="control-label" for="order-receiver_address">Адрес</label>
+                                                    <input type="text" id="order-receiver_address" class="form-control" name="Order[receiver_address]" placeholder="индекс, страна, город, улица, дом">
+
+                                                    <div class="help-block"></div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-4">
+                                                        <div class="form-group field-order-receiver_tgnl">
+                                                            <label class="control-label" for="order-receiver_tgnl">ТГНЛ</label>
+                                                            <input type="text" id="order-receiver_tgnl" class="form-control" name="Order[receiver_tgnl]" maxLength="4">
+
+                                                            <div class="help-block"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-8">
+                                                        <div class="form-group field-order-receiver_plan_number">
+                                                            <label class="control-label" for="order-receiver_plan_number">Номер плана</label>
+                                                            <input type="text" id="order-receiver_plan_number" class="form-control" name="Order[receiver_plan_number]" maxLength="100">
+
+                                                            <div class="help-block"></div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-solid box box-primary">
+                                    <div class="box-header">
+                                        <h3 class="btn btn-box-tool box-title" data-widget="collapse">Дополнительно</h3>
+                                        <div class="box-tools">
+                                            <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-plus"></i></button>
+                                        </div>
+                                    </div>
+                                    <div class="box-body">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group field-order-additional_info">
+                                                    <label class="control-label" for="order-additional_info">Комментарий</label>
+                                                    <textarea id="order-additional_info" class="form-control" name="Order[additional_info]"></textarea>
+
+                                                    <div class="help-block"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <span id="validation-error" class="text-red"></span>
+                                    </div>
+                                    <div class="col-sm-12">
+                                        <button type="submit" class="btn btn-success">Отправить</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <script type="text/javascript">
+                    var delay = (function() {
+        var timer = 0;
+        return function(callback, ms) {
+            clearTimeout(timer);
+            timer = setTimeout(callback, ms);
+        };
+    })();
+
+    $(document).on('click', 'input[name="country-list[]"]', function(e) {
+        let countryList = $('input[name="country-list[]"]:checked');
+        if (countryList.length == 0) {
+            $('#validation-error').html('Выберите хотя бы одну территорию экспедирования...');
+        } else {
+            $('#validation-error').html(' ');
+        }
+    });
+
+    $(document).ready(function() {
+
+        $('.field-order-danger_type').addClass('required');
+
+                    $('.field-order-wagon_registration').addClass('hidden');
+        
+        $('body').on('keyup', '.weight-input', function(e) {
+            let val = parseInt($(this).val().replace(/\D/g, ""));
+            if (val > 32000) {
+                $(this).val(32000);
+            } else {
+                $(this).val(val);
+            }
+        });
+
+
+        $('#order-departure_station').on('select2:select', function(e) {
+            var from = $(this).find(':selected').val();
+            var to = $('#order-destination_station').find(':selected').val();
+
+            if (to === '') {
+                return false;
+            }
+
+            showCountry(from, to);
+        });
+
+        $('#order-destination_station').on('select2:select', function(e) {
+            var from = $('#order-departure_station').find(':selected').val();
+            var to = $(this).find(':selected').val();
+
+            if (from === '') {
+                return false;
+            }
+
+            showCountry(from, to);
+        });
+
+        function showCountry(from, to) {
+            $.ajax({
+                type: 'POST',
+                url: '/client/order/country-list?from=' + from + '&to=' + to,
+                success: function(result) {
+                    if (false === result.result) {
+                        return false;
+                    }
+
+                    $('#country-list').html('');
+
+                    $('#country-list').append('<span class="text text-red">Выберите необходимые территории:</span>');
+
+                    $.each(result.data, function(index, value) {
+
+                        var checked = index == 1 ? 'checked' : '';
+
+                        var data = '<div class="form-group highlight-addon field-order-country-list">' +
+                            '<div class="checkbox">' +
+                            '<label for="order-country-list-' + value.id + '">' +
+                            '<input type="checkbox" id="order-country-list-' + value.id + '" name="country-list[]" value="' + value.id + '" ' + checked + '>' +
+                            value.country +
+                            '</label>' +
+                            '</div>' +
+                            '</div>';
+
+                        $('#country-list').append(data);
+                    })
+                }
+            });
+        }
+
+        // Добавление дополнительных полей для груза
+        $('#add-cargo-field').on('click', function(e) {
+            e.preventDefault();
+            var id = $.now();
+            $('#cargo-wrapper').append(
+                '<hr class="cargo-block-' + id + '">' +
+                '<div class="row" id="cargo-block-' + id + '">' +
+                '<div  class="col-sm-3">' +
+                '<div class="form-group highlight-addon required field-cargo-etcng-' + id + '">' +
+                '<label for="cargo-etcng-' + id + '" class="control-label has-star">Наименование или код груза ЕТСНГ</label>' +
+                '<select class="form-control cargo-input" id="cargo-etcng-' + id + '" name="Cargo[' + id + '][etcng_id]"></select>' +
+                '<div class="help-block"></div>' +
+                '</div></div>' +
+                '<div class="col-sm-3"><div class="form-group highlight-addon required field-cargo-gng-' + id + '">' +
+                '<label for="cargo-gng-' + id + '" class="control-label has-star">Наименование или код груза ГНГ</label>' +
+                '<select class="form-control cargo-input" id="cargo-gng-' + id + '" name="Cargo[' + id + '][gng_id]"></select>' +
+                '<div class="help-block"></div>' +
+                '</div></div>' +
+                '<div class="col-sm-3">' +
+                '<div class="cargo-weight cargo-weight-' + id + ' form-group highlight-addon required field-cargo-weight-' + id + '">' +
+                '<label for="cargo-weight-' + id + '" class="control-label has-star">Вес груза на единицу ПС (тонн)</label>' +
+                '<input type="text" value="" type="number" min="0" class="form-control weight-input" id="cargo-weight-' + id + '" name="Cargo[' + id + '][cargo_weight]">' +
+                '<div class="help-block"></div>' +
+                '</div>' +
+                '</div>' +
+                '<div class="col-sm-2">' +
+                '<div class="form-group hidden cargo-gu field-cargo-gu-' + id + ' cargo-gu-' + id + '">' +
+                '<label for="cargo-number-' + id + '">Номер ГУ</label>' +
+                '<input type="text" value="" class="form-control" id="cargo-number-' + id + '" name="Cargo[' + id + '][gu_number]">' +
+                '<div class="help-block"></div>' +
+                '</div>' +
+                '</div>' +
+                '<div class="col-sm-1">' +
+                '<div class="form-group text-right">' +
+                '<label></label>' +
+                '<button class="cargo-block-remove btn btn-default btn-sm" data-target="cargo-block-' + id + '"><span class="fa fa-minus"></span> Удалить</button>' +
+                '</div>' +
+                '</div>' +
+                '</div>' +
+                '</div>'
+            );
+
+            if (0 == $('#order-wagon_load').val()) {
+                $('.cargo-weight-' + id).addClass('hidden');
+                $('.cargo-gu-' + id).removeClass('hidden');
+                $('.cargo-danger').addClass('hidden');
+                $('.cargo-oon').addClass('hidden');
+            }
+
+            $('#cargo-etcng-' + id).select2({
+                placeholder: '--- выбрать ---',
+                allowClear: false,
+                minimumInputLength: 3,
+                language: 'ru',
+                ajax: {
+                    url: '/client/goods/find',
+                    dataType: 'json',
+                    data: function(params) {
+                        return {
+                            q: params.term,
+                            type: 0
+                        };
+                    }
+                },
+                escapeMarkup: function(markup) {
+                    return markup;
+                },
+                templateResult: function(station) {
+                    return station.text;
+                },
+                templateSelection: function(station) {
+                    $("#goods-tmp").val(station.code);
+                    return station.text;
+                }
+            });
+
+            $('#cargo-gng-' + id).select2({
+                placeholder: '--- выбрать ---',
+                allowClear: false,
+                minimumInputLength: 0,
+                language: 'ru',
+                ajax: {
+                    url: '/client/goods/find',
+                    dataType: 'json',
+                    data: function(params) {
+                        return {
+                            q: params.term,
+                            type: 1,
+                            goodsTmp: $("#goods-tmp").val()
+                        };
+                    }
+                },
+                escapeMarkup: function(markup) {
+                    return markup;
+                },
+                templateResult: function(station) {
+                    return station.text;
+                },
+                templateSelection: function(station) {
+                    return station.text;
+                }
+            });
+
+            $('.cargo-block-remove').on('click', function(e) {
+                e.preventDefault();
+                $('#' + $(this).data('target')).prev('hr').remove();
+                $('#' + $(this).data('target')).remove();
+                return false;
+            });
+
+            $('#order-form').yiiActiveForm('add', {
+                id: 'cargo-etcng-' + id,
+                container: '.field-cargo-etcng-' + id,
+                input: '#cargo-etcng-' + id,
+                error: '.help-block'
+            });
+            $('#order-form').yiiActiveForm('add', {
+                id: 'cargo-gng-' + id,
+                container: '.field-cargo-gng-' + id,
+                input: '#cargo-gng-' + id,
+                error: '.help-block'
+            });
+            $('#order-form').yiiActiveForm('add', {
+                id: 'cargo-weight-' + id,
+                container: '.field-cargo-weight-' + id,
+                input: '#cargo-weight-' + id,
+                error: '.help-block',
+            });
+
+            return false;
+        });
+
+        $('.cargo-block-remove').on('click', function(e) {
+            e.preventDefault();
+            $('#' + $(this).data('target')).prev('hr').remove();
+            $('#' + $(this).data('target')).remove();
+            return false;
+        });
+
+        $('#order-danger_type').on('change', function(e) {
+            if ($(this).val() != '' && $(this).val() != 0) {
+                $('#add-cargo-field').addClass('hidden');
+            } else {
+                $('#add-cargo-field').removeClass('hidden');
+            }
+        });
+
+        $('input[name="Order[wagon_number]"]').on('keyup', function(e) {
+            let wagonNumbers = parseInt($('#order-wagon_quantity').val());
+            let enteredWagonNumbers = parseInt($(this).val().replace(/\s/g, '').split(/[\, ]/).length);
+            $('#wagon-cnt').html(enteredWagonNumbers);
+            if (wagonNumbers < enteredWagonNumbers) {
+                let numbers = $(this).val().replace(/\s/g, '').split(/[\, ]/);
+                $(this).val(numbers.slice(0, wagonNumbers).join(','));
+            }
+        });
+
+                    $('input[name="Order[wagon_number]"]').on('blur', function(e) {
+                let wagonNumbers = parseInt($('#order-wagon_quantity').val());
+                let cleanedNumbers = $(this).val().replace(/[^\w\s\']|_/g, "").replace(/\s+/g, "");
+                let wagonNumbersLength = cleanedNumbers.length;
+                let chunks = [];
+                let type = 'повагонной';
+                if (wagonNumbersLength % 8 == 0) {
+                    chunks = cleanedNumbers.match(/.{1,8}/g);
+                } else if (wagonNumbersLength % 11 == 0 || cleanedNumbers.match(/\D/)) {
+                    type = 'контейнерной';
+                    chunks = cleanedNumbers.match(/.{1,11}/g);
+                }
+
+                if (chunks.length > 1) {
+                    $(this).val(chunks.join(','));
+                } else {
+                    $(this).val(cleanedNumbers);
+                }
+
+                $('input[name="Order[wagon_number]"]').trigger('keyup');
+
+
+                if (wagonNumbers && wagonNumbers != chunks.length) {
+                    $('#wagon-help').html('Проверьте корректность заполнения номеров для <b>' + type + '</b> отправки.');
+                } else {
+                    $('#wagon-help').html('');
+                }
+
+            });
+        
+        $('#order-wagon_load').on('change', function(e) {
+            if (0 == $(this).val()) {
+                $('.cargo-weight').addClass('hidden');
+                $('.cargo-gu').removeClass('hidden');
+                $('.cargo-weight > input').val('');
+                $('.cargo-danger').addClass('hidden');
+                $('.cargo-oon').addClass('hidden');
+
+                $('#empty-load').show();
+                $('.field-order-oon_number').addClass('hidden');
+                $('.field-order-danger_type').addClass('hidden');
+                $('.field-order-wagon_registration').removeClass('hidden');
+                $('.field-order-wagon_registration').addClass('required');
+            } else {
+                $('.field-order-wagon_registration').addClass('hidden');
+                $('.cargo-weight').removeClass('hidden');
+                $('.cargo-gu').addClass('hidden');
+                $('.cargo-gu > input').val('');
+
+                $('.cargo-danger').removeClass('hidden');
+                $('.cargo-oon').removeClass('hidden');
+
+                $('#empty-load').hide();
+                $('.field-order-oon_number').removeClass('hidden');
+                $('.field-order-danger_type').removeClass('hidden');
+            }
+        });
+
+
+        $('#order-wagon_type').on('select2:select', function(e) {
+            var value = e.params.data.text;
+            if (null !== value.match(/(контейнер)/gi)) {
+                $('#platform_type').removeClass('hidden');
+            } else {
+                $('#platform_type').addClass('hidden');
+            }
+        });
+
+        $('#order-form').on('afterValidate', function(event) {
+            return validateOrderFields();
+
+        }).on('beforeSubmit', function(event) {
+
+            return validateOrderFields();
+        });
+
+        /**
+         * @returns {boolean}
+         */
+        function validateOrderFields() {
+            var result = true;
+
+            var countryList = $('input[name="country-list[]"]:checked');
+
+            var countryIds = [];
+
+            countryList.each(function() {
+                countryIds.push(parseInt($(this).val()));
+            });
+
+
+            if ($('#order-departure_station').val() !== "" && $('#order-destination_station').val() !== "") {
+                if (countryList.length == 0) {
+                    $('#validation-error').html('Выберите хотя бы одну территорию экспедирования...');
+                    result = false;
+                } else {
+                    $('#validation-error').html(' ');
+                    result = true;
+                }
+            }
+
+            if ((countryIds.includes(1) || countryIds.includes(6)) && $('#order-wagon_load').val() == 0) {
+                if ($('#order-sender_tgnl').val() === '') {
+                    $('#order-form').yiiActiveForm('updateAttribute', 'order-sender_tgnl', ['Необходимо заполнить «ТГНЛ']);
+                    result = false;
+                }
+
+                if ($('#order-sender_okpo').val() === '') {
+                    $('#order-form').yiiActiveForm('updateAttribute', 'order-sender_okpo', ['Необходимо заполнить ОКПО']);
+                    result = false;
+                }
+
+                if ($('#order-receiver_tgnl').val() === '') {
+                    $('#order-form').yiiActiveForm('updateAttribute', 'order-receiver_tgnl', ['Необходимо заполнить «ТГНЛ']);
+                    result = false;
+                }
+                if ($('#order-receiver_okpo').val() === '') {
+                    $('#order-form').yiiActiveForm('updateAttribute', 'order-receiver_okpo', ['Необходимо заполнить ОКПО']);
+                    result = false;
+                }
+            }
+
+            if ($('#order-departure_station').val() === "") {
+                result = false;
+                $('#order-form').yiiActiveForm('updateAttribute', 'order-departure_station', ['Необходимо заполнить «Станция отправления»']);
+            }
+            if ($('#order-destination_station').val() === "") {
+                result = false;
+                $('#order-form').yiiActiveForm('updateAttribute', 'order-destination_station', ['Необходимо заполнить «Станция назначения»']);
+            }
+
+            if ($('#order-contract_id').val() === null || $('#order-contract_id').val() === "") {
+                result = false;
+                $('#order-form').yiiActiveForm('updateAttribute', 'order-contract_id', ['Необходимо заполнить «Договор»']);
+            }
+
+
+            if ($('#order-wagon_load').val() == 1 && $('#order-danger_type').val() == "") {
+                result = false;
+                $('#order-form').yiiActiveForm('updateAttribute', 'order-danger_type', ['Необходимо заполнить «Тип опасности»']);
+            }
+
+            if ($('#order-wagon_load').val() == 0 && $('#order-wagon_registration').val() == 0) {
+                result = false;
+                $('#order-form').yiiActiveForm('updateAttribute', 'order-wagon_registration', ['Необходимо заполнить «Приписка вагона»']);
+            }
+
+            if ($('#order-danger_type').val() == 1 && $('#order-oon_number').val() == "") {
+                result = false;
+                $('#order-form').yiiActiveForm('updateAttribute', 'order-oon_number', ['Необходимо заполнить «Номер ООН»']);
+            }
+
+            if ($('#order-cargo_dimension').val() == 2 && $('#order-size_comment').val() == "") {
+                result = false;
+                $('#order-form').yiiActiveForm('updateAttribute', 'order-size_comment', ['Необходимо заполнить «Степень габаритности»']);
+            }
+
+            if ($('#sender_country').val() == 0 && !$('#order-sender_okpo').val()) {
+                result = false;
+                $('#order-form').yiiActiveForm('updateAttribute', 'order-sender_okpo', ['Необходимо заполнить «ОКПО»']);
+            }
+
+            if ($('#receiver_country').val() == 0 && !$('#order-receiver_okpo').val()) {
+                result = false;
+                $('#order-form').yiiActiveForm('updateAttribute', 'order-receiver_okpo', ['Необходимо заполнить «ОКПО»']);
+            }
+
+            $('.cargo-input').each(function() {
+                if ($(this).hasClass('weight-input') && !$(this).val() && $('#order-wagon_load').val() !== 0) {
+                    var id = $(this).attr('id');
+                    var label = $("label[for='" + id + "']");
+
+                    $('#order-form').yiiActiveForm('updateAttribute', id, ['Необходимо заполнить «' + label.text() + '»']);
+                }
+                if ($(this).val() === "" || $(this).val() === null) {
+                    var dependent = $(this).data('dependent');
+                    if (dependent && $('#' + dependent).val() != $(this).data('value')) {
+                        return true;
+                    }
+
+                    result = false;
+                    var id = $(this).attr('id');
+                    var label = $("label[for='" + id + "']");
+
+                    $('#order-form').yiiActiveForm('updateAttribute', id, ['Необходимо заполнить «' + label.text() + '»']);
+                }
+            });
+
+
+            return result;
+        }
+    });
+                </script>
+            </section>
+        </div>
+
+        <aside class="control-sidebar control-sidebar-light">
+
+            <span class="text-center content">
+        <h4>Россия</h4>
+        <p><a href="tel:+7 (383) 303-99-81">+7 (383) 303-99-81</a></p>
+        <h4>Казахстан</h4>
+        <p><a href="tel:+7 (7222) 68-25-35">+7 (7222) 68-25-35</a></p>
+        <h4>Беларусь</h4>
+        <p><a href="tel:+375-33-699-35-04">+375-33-699-35-04</a></p>
+        <h4>Узбекистан</h4>
+        <p><a href="tel:+998-71-205-92-02">+998-71-205-92-02</a></p>
+</span>
+
+            <span class="text-center content">
+    <h5>Персональный менеджер</h5>
+    <p>Прокопенко Светлана Викторовна</p>
+           <p><a href="tel:+7(383)303-99-81" target="_blank">+7 (383) 303-99-81 доб. 105</a></p>
+            <p><a href="https://wa.me/79619959004" target="_blank">+7 (961) 995-90-04 (WhatsApp)</a></p>
+            <p><a href="mailto:prokopenko@glogist.ru" target="_blank">prokopenko@glogist.ru</a></p>
+</span>
+            <span class="text-center content">
+        <a class="btn btn-primary" href="/feedback">Написать нам</a>    </span>
+
+        </aside>
+
+        <div class="control-sidebar-bg"></div>
+
+    </div>
+    <script src="https://lk.glogist.ru/static/assets/95bdb41c/yii.validation.js"></script>
+    <script src="https://lk.glogist.ru/static/assets/b0617a94/js/dependent-dropdown.min.js"></script>
+    <script src="https://lk.glogist.ru/static/assets/68fe00d7/js/depdrop.min.js"></script>
+    <script src="https://lk.glogist.ru/static/assets/bceaf30/js/kv-widgets.min.js"></script>
+    <script src="https://lk.glogist.ru/static/assets/9ee362e2/js/bootstrap-datepicker.min.js"></script>
+    <script src="https://lk.glogist.ru/static/assets/9ee362e2/js/datepicker-kv.min.js"></script>
+    <script src="https://lk.glogist.ru/static/assets/9ee362e2/js/locales/bootstrap-datepicker.ru.min.js"></script>
+    <script src="https://lk.glogist.ru/static/assets/8c2c335d/js/select2.full.min.js"></script>
+    <script src="https://lk.glogist.ru/static/assets/8c2c335d/js/i18n/ru.js"></script>
+    <script src="https://lk.glogist.ru/static/assets/c7704526/js/select2-krajee.min.js"></script>
+    <script src="https://lk.glogist.ru/static/assets/95bdb41c/yii.activeForm.js"></script>
+    <script src="/static/js/bootstrap-tour.min.js"></script>
+    <script src="/static/js/tour.js"></script>
+    <script>
+        $('#order-form').on('afterInit', function () {    
+    $(this).yiiActiveForm('add', {
+        id: 'cargo-etcng-1',
+        container: '.field-cargo-etcng-1',
+        input: '#cargo-etcng-1',
+        error: '.help-block',
+    });
+    $(this).yiiActiveForm('add', {
+        id: 'cargo-gng-1',
+        container: '.field-cargo-gng-1',
+        input: '#cargo-gng-1',
+        error: '.help-block',
+    });
+    $(this).yiiActiveForm('add', {
+        id: 'cargo-weight-1',
+        container: '.field-cargo-weight-1',
+        input: '#cargo-weight-1',
+        error: '.help-block',
+    });
+});
+    </script>
+    <script>
+        jQuery(function ($) {
+jQuery&&jQuery.pjax&&(jQuery.pjax.defaults.maxCacheLength=0);
+if (jQuery('#order-contract_id').data('depdrop')) { jQuery('#order-contract_id').depdrop('destroy'); }
+jQuery('#order-contract_id').depdrop(depdrop_a0a35871);
+
+jQuery.fn.kvDatepicker.dates={};
+if (jQuery('#order-delivery_start').data('kvDatepicker')) { jQuery('#order-delivery_start').kvDatepicker('destroy'); }
+jQuery('#order-delivery_start').kvDatepicker(kvDatepicker_40e446a8);
+
+if (jQuery('#order-delivery_end').data('kvDatepicker')) { jQuery('#order-delivery_end').kvDatepicker('destroy'); }
+jQuery('#order-delivery_end').kvDatepicker(kvDatepicker_40e446a8);
+
+if (jQuery('#order-departure_station').data('select2')) { jQuery('#order-departure_station').select2('destroy'); }
+jQuery.when(jQuery('#order-departure_station').select2(select2_6a144669)).done(initS2Loading('order-departure_station','s2options_7ebc6538'));
+
+if (jQuery('#order-destination_station').data('select2')) { jQuery('#order-destination_station').select2('destroy'); }
+jQuery.when(jQuery('#order-destination_station').select2(select2_db9cbcf5)).done(initS2Loading('order-destination_station','s2options_7ebc6538'));
+
+if (jQuery('#order-wagon_type').data('select2')) { jQuery('#order-wagon_type').select2('destroy'); }
+jQuery.when(jQuery('#order-wagon_type').select2(select2_fb4bfd56)).done(initS2Loading('order-wagon_type','s2options_7ebc6538'));
+
+if (jQuery('#cargo-etcng-1').data('select2')) { jQuery('#cargo-etcng-1').select2('destroy'); }
+jQuery.when(jQuery('#cargo-etcng-1').select2(select2_489630a1)).done(initS2Loading('cargo-etcng-1','s2options_7ebc6538'));
+
+if (jQuery('#cargo-gng-1').data('select2')) { jQuery('#cargo-gng-1').select2('destroy'); }
+jQuery.when(jQuery('#cargo-gng-1').select2(select2_4e3e3c17)).done(initS2Loading('cargo-gng-1','s2options_7ebc6538'));
+
+jQuery('#order-form').yiiActiveForm([{"id":"order-contractor_id","name":"contractor_id","container":".field-contractor_id","input":"#contractor_id","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Контрагент»."});yii.validation.number(value, messages, {"pattern":/^[+-]?\d+$/,"message":"Значение «Контрагент» должно быть целым числом.","skipOnEmpty":1});}},{"id":"order-contract_id","name":"contract_id","container":".field-order-contract_id","input":"#order-contract_id","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Договор»."});yii.validation.number(value, messages, {"pattern":/^[+-]?\d+$/,"message":"Значение «Договор» должно быть целым числом.","skipOnEmpty":1});}},{"id":"order-delivery_start","name":"delivery_start","container":".field-order-delivery_start","input":"#order-delivery_start","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Период поставки с»."});}},{"id":"order-departure_station","name":"departure_station","container":".field-order-departure_station","input":"#order-departure_station","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Станция отправления»."});yii.validation.number(value, messages, {"pattern":/^[+-]?\d+$/,"message":"Значение «Станция отправления» должно быть целым числом.","skipOnEmpty":1});}},{"id":"order-destination_station","name":"destination_station","container":".field-order-destination_station","input":"#order-destination_station","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Станция назначения»."});yii.validation.number(value, messages, {"pattern":/^[+-]?\d+$/,"message":"Значение «Станция назначения» должно быть целым числом.","skipOnEmpty":1});}},{"id":"order-wagon_quantity","name":"wagon_quantity","container":".field-order-wagon_quantity","input":"#order-wagon_quantity","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Желаемое количество вагонов»."});yii.validation.number(value, messages, {"pattern":/^[+-]?\d+$/,"message":"Значение «Желаемое количество вагонов» должно быть целым числом.","skipOnEmpty":1});}},{"id":"order-oon_number","name":"oon_number","container":".field-order-oon_number","input":"#order-oon_number","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Значение «Номер ООН» должно быть строкой.","max":4,"tooLong":"Значение «Номер ООН» должно содержать максимум 4 символа.","skipOnEmpty":1});}},{"id":"order-wagon_type","name":"wagon_type","container":".field-order-wagon_type","input":"#order-wagon_type","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Тип вагона»."});yii.validation.number(value, messages, {"pattern":/^[+-]?\d+$/,"message":"Значение «Тип вагона» должно быть целым числом.","skipOnEmpty":1});}},{"id":"order-wagon_load","name":"wagon_load","container":".field-order-wagon_load","input":"#order-wagon_load","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Загруженность»."});yii.validation.number(value, messages, {"pattern":/^[+-]?\d+$/,"message":"Значение «Загруженность» должно быть целым числом.","skipOnEmpty":1});yii.validation.range(value, messages, {"range":["0","1"],"not":false,"message":"Значение «Загруженность» неверно.","skipOnEmpty":1});}},{"id":"order-affiliation","name":"affiliation","container":".field-order-affiliation","input":"#order-affiliation","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Принадлежность ПС»."});yii.validation.number(value, messages, {"pattern":/^[+-]?\d+$/,"message":"Значение «Принадлежность ПС» должно быть целым числом.","skipOnEmpty":1});yii.validation.range(value, messages, {"range":["1","2"],"not":false,"message":"Значение «Принадлежность ПС» неверно.","skipOnEmpty":1});}},{"id":"order-danger_type","name":"danger_type","container":".field-order-danger_type","input":"#order-danger_type","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^[+-]?\d+$/,"message":"Значение «Тип опасности» должно быть целым числом.","skipOnEmpty":1});}},{"id":"order-wagon_registration","name":"wagon_registration","container":".field-order-wagon_registration","input":"#order-wagon_registration","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^[+-]?\d+$/,"message":"Значение «Приписка вагона» должно быть целым числом.","skipOnEmpty":1});}},{"id":"order-cargo_dimension","name":"cargo_dimension","container":".field-order-cargo_dimension","input":"#order-cargo_dimension","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Габаритность груза»."});yii.validation.number(value, messages, {"pattern":/^[+-]?\d+$/,"message":"Значение «Габаритность груза» должно быть целым числом.","skipOnEmpty":1});yii.validation.range(value, messages, {"range":["1","2","0"],"not":false,"message":"Значение «Габаритность груза» неверно.","skipOnEmpty":1});}},{"id":"order-size_comment","name":"size_comment","container":".field-order-size_comment","input":"#order-size_comment","validate":function (attribute, value, messages, deferred, $form) {value = yii.validation.trim($form, attribute, [], value);yii.validation.string(value, messages, {"message":"Значение «Степень габаритности» должно быть строкой.","max":255,"tooLong":"Значение «Степень габаритности» должно содержать максимум 255 символов.","skipOnEmpty":1});}},{"id":"order-platform_type","name":"platform_type","container":".field-order-platform_type","input":"#order-platform_type","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^[+-]?\d+$/,"message":"Значение «Тип платформы» должно быть целым числом.","skipOnEmpty":1});}},{"id":"order-sender_okpo","name":"sender_okpo","container":".field-order-sender_okpo","input":"#order-sender_okpo","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^[+-]?\d+$/,"message":"Значение «ОКПО» должно быть целым числом.","skipOnEmpty":1});yii.validation.string(value, messages, {"message":"Значение «ОКПО» должно быть строкой.","max":10,"tooLong":"Значение «ОКПО» должно содержать максимум 10 символов.","skipOnEmpty":1});}},{"id":"order-sender_name","name":"sender_name","container":".field-order-sender_name","input":"#order-sender_name","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Наименование»."});value = yii.validation.trim($form, attribute, [], value);yii.validation.string(value, messages, {"message":"Значение «Наименование» должно быть строкой.","max":255,"tooLong":"Значение «Наименование» должно содержать максимум 255 символов.","skipOnEmpty":1});}},{"id":"order-sender_address","name":"sender_address","container":".field-order-sender_address","input":"#order-sender_address","validate":function (attribute, value, messages, deferred, $form) {value = yii.validation.trim($form, attribute, [], value);yii.validation.string(value, messages, {"message":"Значение «Адрес» должно быть строкой.","max":255,"tooLong":"Значение «Адрес» должно содержать максимум 255 символов.","skipOnEmpty":1});}},{"id":"order-sender_tgnl","name":"sender_tgnl","container":".field-order-sender_tgnl","input":"#order-sender_tgnl","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Значение «ТГНЛ» должно быть строкой.","max":100,"tooLong":"Значение «ТГНЛ» должно содержать максимум 100 символов.","skipOnEmpty":1});}},{"id":"order-receiver_okpo","name":"receiver_okpo","container":".field-order-receiver_okpo","input":"#order-receiver_okpo","validate":function (attribute, value, messages, deferred, $form) {yii.validation.number(value, messages, {"pattern":/^[+-]?\d+$/,"message":"Значение «ОКПО» должно быть целым числом.","skipOnEmpty":1});yii.validation.string(value, messages, {"message":"Значение «ОКПО» должно быть строкой.","max":10,"tooLong":"Значение «ОКПО» должно содержать максимум 10 символов.","skipOnEmpty":1});}},{"id":"order-receiver_name","name":"receiver_name","container":".field-order-receiver_name","input":"#order-receiver_name","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Необходимо заполнить «Наименование»."});value = yii.validation.trim($form, attribute, [], value);yii.validation.string(value, messages, {"message":"Значение «Наименование» должно быть строкой.","max":255,"tooLong":"Значение «Наименование» должно содержать максимум 255 символов.","skipOnEmpty":1});}},{"id":"order-receiver_address","name":"receiver_address","container":".field-order-receiver_address","input":"#order-receiver_address","validate":function (attribute, value, messages, deferred, $form) {value = yii.validation.trim($form, attribute, [], value);yii.validation.string(value, messages, {"message":"Значение «Адрес» должно быть строкой.","max":255,"tooLong":"Значение «Адрес» должно содержать максимум 255 символов.","skipOnEmpty":1});}},{"id":"order-receiver_tgnl","name":"receiver_tgnl","container":".field-order-receiver_tgnl","input":"#order-receiver_tgnl","validate":function (attribute, value, messages, deferred, $form) {yii.validation.string(value, messages, {"message":"Значение «ТГНЛ» должно быть строкой.","max":100,"tooLong":"Значение «ТГНЛ» должно содержать максимум 100 символов.","skipOnEmpty":1});}},{"id":"order-receiver_plan_number","name":"receiver_plan_number","container":".field-order-receiver_plan_number","input":"#order-receiver_plan_number","validate":function (attribute, value, messages, deferred, $form) {value = yii.validation.trim($form, attribute, [], value);yii.validation.string(value, messages, {"message":"Значение «Номер плана» должно быть строкой.","max":255,"tooLong":"Значение «Номер плана» должно содержать максимум 255 символов.","skipOnEmpty":1});}},{"id":"order-additional_info","name":"additional_info","container":".field-order-additional_info","input":"#order-additional_info","validate":function (attribute, value, messages, deferred, $form) {value = yii.validation.trim($form, attribute, [], value);yii.validation.string(value, messages, {"message":"Значение «Дополнительно» должно быть строкой.","max":255,"tooLong":"Значение «Дополнительно» должно содержать максимум 255 символов.","skipOnEmpty":1});}}], []);
+});
+    </script>
+
+    <!-- Modal -->
+    <div class="modal fade" id="logout-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Выход</h4>
+                </div>
+                <div class="modal-body">
+                    Подтверждаете выход?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Отмена</button>
+                    <button type="button" class="btn btn-primary" href="/user/account/logout" data-method="post">Выйти
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+
+            let href = window.location.href;
+
+            if (href.indexOf('/client/order/index') > 0) {
+                let menuItem = $('#order-menu');
+                menuItem.addClass('menu-open');
+                menuItem.children('ul.treeview-menu').css('display', 'block');
+                menuItem.parent('li').addClass('active');
+            }
+
+            let cookieValue = document.cookie.replace(/(?:(?:^|.*;\s*)news\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+
+            if (cookieValue != 53) {
+                $('#news-warning').show();
+            }
+        });
+    </script>
+</body>
+
+</html>
