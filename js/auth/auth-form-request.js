@@ -26,7 +26,7 @@ document.getElementById(formId).addEventListener("submit", function(e)
 
   if (window.Telegram.WebApp && window.Telegram.WebApp.initDataUnsafe && window.Telegram.WebApp.initDataUnsafe.user) 
   { 
-    errorContainer.innerText = window.Telegram.WebApp.initDataUnsafe.user;
+    errorContainer.innerText = JSON.stringify(window.Telegram.WebApp.initDataUnsafe.user);
   }
 
   // const endpoint = this.action;
