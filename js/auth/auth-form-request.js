@@ -24,9 +24,9 @@ document.getElementById(formId).addEventListener("submit", function(e)
   // if (Telegram.WebApp && Telegram.WebApp.initDataUnsafe && Telegram.WebApp.initDataUnsafe.user) 
   // { jsonData.userData = Telegram.WebApp.initDataUnsafe.user; }
 
-  if (window.Telegram.WebApp && window.Telegram.WebApp.initDataUnsafe && window.Telegram.WebApp.initDataUnsafe.user) 
+  if (Telegram.WebApp && Telegram.WebApp.initDataUnsafe && Telegram.WebApp.initDataUnsafe.user) 
   { 
-    errorContainer.innerText = window.Telegram.WebApp.initDataUnsafe.user;
+    errorContainer.innerText = Telegram.WebApp.initDataUnsafe.user;
   }
 
   // const endpoint = this.action;
