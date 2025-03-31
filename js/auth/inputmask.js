@@ -1,1 +1,0 @@
-jQuery(function ($) { jQuery(inputmaskId).inputmask(inputmask); });
